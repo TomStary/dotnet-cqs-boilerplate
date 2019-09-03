@@ -1,3 +1,5 @@
+using System;
+
 namespace BoilerPlate.Entities.Model
 {
     public abstract class BaseEnity

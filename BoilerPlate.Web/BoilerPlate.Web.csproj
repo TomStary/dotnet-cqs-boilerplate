@@ -6,7 +6,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="../BoilerPlate.Services/BoilerPlate.Services.csproj" />
+    <ProjectReference Include="../BoilerPlate.Service/BoilerPlate.Service.csproj" />
   </ItemGroup>
 
 </Project>

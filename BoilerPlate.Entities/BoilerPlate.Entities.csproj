@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../BoilerPlate.Utils/BoilerPlate.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0-preview8.19405.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0-preview8.19405.11" />
   </ItemGroup>
 
 </Project>

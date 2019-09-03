@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoilerPlate.Services", "BoilerPlate.Services\BoilerPlate.Services.csproj", "{DCF466FF-C38F-4837-B87B-5021F8BCAD19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoilerPlate.Service", "BoilerPlate.Service\BoilerPlate.Service.csproj", "{DCF466FF-C38F-4837-B87B-5021F8BCAD19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoilerPlate.Entities", "BoilerPlate.Entities\BoilerPlate.Entities.csproj", "{D4DE7DF0-40AF-444A-AA55-CF9D892B3575}"
 EndProject

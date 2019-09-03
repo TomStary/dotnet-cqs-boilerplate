@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BoilerPlate.Web.Models;
+using BoilerPlate.Service.BookService;
 
 namespace BoilerPlate.Web.Controllers
 {
@@ -18,8 +19,11 @@ namespace BoilerPlate.Web.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(
+            [FromServices] IBookService bookService
+        )
         {
+            var books = bookService.GetAllBooks();
             return View();
         }
 

@@ -1,13 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using BoilerPlate.Entities;
+using BoilerPlate.Service;
+using BoilerPlate.Service.BookService;
+using BoilerPlate.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AssemblyExtensions = BoilerPlate.Utils.AssemblyExtensions;
 
 namespace BoilerPlate.Web
 {
@@ -23,6 +30,13 @@ namespace BoilerPlate.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlite("Data Source=book.db");
+            });
+
+            services.AddScoped(typeof(IBookService), typeof(BookService));
+
             services.AddControllersWithViews();
         }
 

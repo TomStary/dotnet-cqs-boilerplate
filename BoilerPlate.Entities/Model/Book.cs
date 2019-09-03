@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace BoilerPlate.Entities.Model
 {
     public class Book : BaseEnity
